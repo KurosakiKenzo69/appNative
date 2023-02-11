@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Test</Text>
+      <Text style={styles.text}>Bonjour</Text>
+      <Text> Voici la liste des tâches : </Text>
+      <button style={styles.button}> Catégories </button>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,11 +15,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'white',
+    marginTop: 100,
+    marginLeft: 25,
   },
   text: {
-    color: 'white',
+    color: 'black',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+
+  button: {
+    width: 20,
+    marginTop: 20,
   },
 });
